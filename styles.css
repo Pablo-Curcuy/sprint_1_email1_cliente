@@ -1,0 +1,98 @@
+/* Reset básico: elimina márgenes y paddings predeterminados para tener un punto de partida uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+    /* Fuente estándar para todo el texto */
+    font-family: 'Arial', sans-serif; 
+
+    /* Altura de línea para mejorar la legibilidad */
+    line-height: 1.6;
+
+    /* Color de fondo claro para un diseño limpio */
+    background-color: #f4f4f4;
+
+    /* Color del texto principal */
+    color: #333;
+}
+
+/* Header: se ocupa de la cabecera de la página */
+header {
+    /* Fondo azul oscuro */
+    background-color: #003366;
+
+    /* Texto en color blanco */
+    color: white;
+
+    /* Espaciado interno para separar el contenido de los bordes */
+    padding: 20px 0;
+
+    /* Centra el texto en la cabecera */
+    text-align: center;
+}
+
+/* Enlaces dentro del header */
+header nav {
+    /* Distribuye los enlaces de manera horizontal */
+    display: flex;
+
+    /* Los separa con espacio uniforme */
+    justify-content: center;
+
+    /* Espaciado entre cada enlace */
+    gap: 20px;
+}
+
+header nav a {
+    /* Texto blanco para los enlaces */
+    color: #fff;
+
+    /* Quita el subrayado de los enlaces */
+    text-decoration: none;
+}
+
+/* Efecto al pasar el ratón sobre los enlaces */
+header nav a:hover {
+    /* Aparece un subrayado al hacer hover */
+    text-decoration: underline;
+}
+
+/* Secciones generales */
+section {
+    /* Espaciado interno dentro de cada sección */
+    padding: 20px;
+
+    /* Espaciado externo entre las secciones */
+    margin: 20px auto;
+
+    /* Fondo blanco para que el contenido destaque */
+    background: #fff;
+
+    /* Esquinas redondeadas */
+    border-radius: 8px;
+
+    /* Sombra para dar efecto de profundidad */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Footer: estilo del pie de página */
+footer {
+    /* Fondo azul oscuro */
+    background-color: #003366;
+
+    /* Texto blanco */
+    color: white;
+
+    /* Centra el texto dentro del footer */
+    text-align: center;
+
+    /* Espaciado interno del footer */
+    padding: 10px 0;
+}
+
+
