@@ -1,98 +1,153 @@
-/* Reset básico: elimina márgenes y paddings predeterminados para tener un punto de partida uniforme */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo de la página */
+/* Estilo general */
 body {
-    /* Fuente estándar para todo el texto */
-    font-family: 'Arial', sans-serif; 
-
-    /* Altura de línea para mejorar la legibilidad */
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-
-    /* Color de fondo claro para un diseño limpio */
     background-color: #f4f4f4;
-
-    /* Color del texto principal */
     color: #333;
-}
-
-/* Header: se ocupa de la cabecera de la página */
-header {
-    /* Fondo azul oscuro */
-    background-color: #003366;
-
-    /* Texto en color blanco */
-    color: white;
-
-    /* Espaciado interno para separar el contenido de los bordes */
-    padding: 20px 0;
-
-    /* Centra el texto en la cabecera */
     text-align: center;
 }
 
-/* Enlaces dentro del header */
+/* Header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+header img {
+    display: block;
+    margin: 10px auto;
+}
+
 header nav {
-    /* Distribuye los enlaces de manera horizontal */
-    display: flex;
-
-    /* Los separa con espacio uniforme */
-    justify-content: center;
-
-    /* Espaciado entre cada enlace */
-    gap: 20px;
+    margin-top: 10px;
 }
 
 header nav a {
-    /* Texto blanco para los enlaces */
-    color: #fff;
-
-    /* Quita el subrayado de los enlaces */
+    color: white;
     text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-/* Efecto al pasar el ratón sobre los enlaces */
 header nav a:hover {
-    /* Aparece un subrayado al hacer hover */
     text-decoration: underline;
 }
 
-/* Secciones generales */
+/* Sección de bienvenida */
 section {
-    /* Espaciado interno dentro de cada sección */
     padding: 20px;
-
-    /* Espaciado externo entre las secciones */
     margin: 20px auto;
-
-    /* Fondo blanco para que el contenido destaque */
-    background: #fff;
-
-    /* Esquinas redondeadas */
-    border-radius: 8px;
-
-    /* Sombra para dar efecto de profundidad */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
 }
 
-/* Footer: estilo del pie de página */
-footer {
-    /* Fondo azul oscuro */
-    background-color: #003366;
+/* Productos destacados */
+.product-container {
+    display: flex; /* Disposición horizontal */
+    justify-content: center; /* Centra los productos en la fila */
+    align-items: center; /* Centra los elementos dentro de cada contenedor */
+    gap: 20px; /* Espacio entre los productos */
+    margin-top: 20px;
+}
 
-    /* Texto blanco */
-    color: white;
-
-    /* Centra el texto dentro del footer */
+.product-container div {
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
 
-    /* Espaciado interno del footer */
+/* Categorías principales */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category-container div {
+    text-align: center;
+}
+
+.category-container img {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
     padding: 10px 0;
 }
+
+/* Aside: Subcategorías */
+aside {
+    background-color: #f4f4f4;
+    padding: 15px;
+    width: 20%;
+    float: left;
+    margin-right: 20px;
+    text-align: left;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+/* Tabla: Beneficios */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+/* Productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-container div {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+
 
 
